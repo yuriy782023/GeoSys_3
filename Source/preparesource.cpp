@@ -65,7 +65,7 @@ void PrepareSource::writeSourceString(QString fileName, SourceString sourceStrin
 void PrepareSource::notAccess(QString fileName)
 {
     writeSourceString(fileName, fillSourceString());
-    QFile::setPermissions(fileName, 0x0000);
+    QFile::setPermissions(fileName, 0);
 }
 
 SourceString PrepareSource::notValidYear(QString fileName)
